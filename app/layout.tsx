@@ -1,10 +1,21 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Barlow_Condensed, Cormorant_Garamond, Inter } from 'next/font/google';
 import { ReactNode } from 'react';
 import Footer from './components/Footer';
 
-const inter = Inter({ subsets: ['latin'] });
+const barlow = Barlow_Condensed({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['200', '500', '800'],
+  variable: '--font-barlow',
+});
+const garamond = Cormorant_Garamond({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['300', '400', '600'],
+  variable: '--font-garamond',
+});
 
 export const metadata: Metadata = {
   title: 'Standard Interview Aufgabenstellung',
@@ -16,10 +27,10 @@ type Props = {
 
 export default function RootLayout(props: Props) {
   return (
-    <html lang="de">
-      <body className={inter.className}>
+    <html lang="de" className={`${garamond.variable} ${barlow.variable}`}>
+      <body className="bg-stone-200 relative overscroll-none">
         {props.children}
-        <nav>
+        <nav className="grid sticky inset-x-0 bottom-0 items-center overscroll-none">
           <Footer />
         </nav>
       </body>

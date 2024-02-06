@@ -2,14 +2,15 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <div className="btm-nav">
-      <button>
+    <div className="flex justify-between px-24 bg-stone-100 pt-4 pb-2">
+      <button className="">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
           fill="none"
           viewBox="0 0 24 24"
-          stroke="currentColor"
+          stroke="#1c1917
+          "
         >
           <path
             strokeLinecap="round"
@@ -25,7 +26,7 @@ export default function Footer() {
           className="h-5 w-5"
           fill="none"
           viewBox="0 0 24 24"
-          stroke="currentColor"
+          stroke="#1c1917"
         >
           <path
             strokeLinecap="round"
@@ -41,7 +42,7 @@ export default function Footer() {
           className="h-5 w-5"
           fill="none"
           viewBox="0 0 24 24"
-          stroke="currentColor"
+          stroke="#1c1917"
         >
           <path
             strokeLinecap="round"

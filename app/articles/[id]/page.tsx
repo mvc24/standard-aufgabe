@@ -19,16 +19,25 @@ export default function SingleArticlePage(props: Props) {
   // console.log(article.headline);
 
   return (
-    <div>
-      <h1>{article.headline}</h1>
-      <Image
-        src={article.headerImageUrl}
-        alt={article.headline}
-        width={1100}
-        height={360}
-      />
-      <div>{article.author}</div>
-      <div>{article.text}</div>
+    <div className="min-h-dvh px-2">
+      <div className="mx-2 my-4 rounded-md pb-8 bg-stone-50">
+        <Image
+          src={article.headerImageUrl}
+          alt={article.headline}
+          width={1100}
+          height={360}
+          className="min-w-full rounded-t-md"
+        />
+        <div className="px-4 py-4">
+          <h1 className="font-sans font-bold text-2xl mb-2 text-stone-900">
+            {article.headline}
+          </h1>
+
+          <div className="font-serif font-normal font-stone-900">
+            {article.text}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
