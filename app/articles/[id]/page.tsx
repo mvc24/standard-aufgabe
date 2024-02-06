@@ -16,11 +16,17 @@ export default function SingleArticlePage(props: Props) {
   if (!article) {
     notFound();
   }
+  console.log(article.headline);
 
   return (
     <div>
       <h1>{article.headline}</h1>
-      <Image src={article.headerImageUrl} alt={article.headline} width={1100} />
+      <Image
+        src={article.headerImageUrl}
+        alt={article.headline}
+        width={1100}
+        height={360}
+      />
       <div>{article.author}</div>
       <div>{article.text}</div>
     </div>

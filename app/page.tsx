@@ -2,11 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { fakeData } from '../utils/fakeData';
 import { Article } from '../utils/types';
-import SingleArticlePage from './articles/[articleId]/page';
+import SingleArticlePage from './articles/[id]/page';
 
 export default function Home() {
   const articles: Article[] = fakeData;
-  console.log(articles);
+  // console.log(articles);
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -16,8 +16,9 @@ export default function Home() {
         {articles.map((article) => {
           return (
             <div key={`article-div-${article.id}`}>
-              <Link href={`/articles/${article.id}`} />
-              <div>{article.headline}</div>
+              <Link href={`/articles/${article.id}`}>
+                <div>{article.headline}</div>
+              </Link>
             </div>
           );
         })}
