@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { ReactNode } from 'react';
+import Footer from './components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,9 +19,9 @@ export default function RootLayout(props: Props) {
     <html lang="de">
       <body className={inter.className}>
         {props.children}
-        <footer>
-          <nav>menu bar</nav>
-        </footer>
+        <nav>
+          <Footer />
+        </nav>
       </body>
     </html>
   );

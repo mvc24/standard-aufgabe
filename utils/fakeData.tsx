@@ -2,7 +2,7 @@ import { Article } from './types';
 
 export const fakeData: Article[] = [
   {
-    id: '<guid1>',
+    id: 'guid1',
     headline: 'Eine Ziege Betrachtet Ihren Schatten',
     author: 'Autor:in 1',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -11,7 +11,7 @@ export const fakeData: Article[] = [
     headerImageUrl: '/images/header-image1.jpg',
   },
   {
-    id: '<guid2>',
+    id: 'guid2',
     headline: 'Die Biene Arbeitet',
     author: 'Autor:in 2',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -20,7 +20,7 @@ export const fakeData: Article[] = [
     headerImageUrl: '/images/header-image2.jpg',
   },
   {
-    id: '<guid3>',
+    id: 'guid3',
     headline: 'Das Eichhörnchen Ist Verdutzt',
     author: 'Autor:in 3',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -29,7 +29,7 @@ export const fakeData: Article[] = [
     headerImageUrl: '/images/header-image3.jpg',
   },
   {
-    id: '<guid4>',
+    id: 'guid4',
     headline: 'Das Eichhörnchen Kratzt Sich',
     author: 'Autor:in 4',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
@@ -38,7 +38,7 @@ export const fakeData: Article[] = [
     headerImageUrl: '/images/header-image4.jpg',
   },
   {
-    id: '<guid5>',
+    id: 'guid5',
     headline: 'Die Schnecke Unterwegs',
     author: 'Autor:in 5',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
