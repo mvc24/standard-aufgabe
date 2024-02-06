@@ -16,7 +16,7 @@ export default function SingleArticlePage(props: Props) {
   if (!article) {
     notFound();
   }
-  console.log(article.headline);
+  // console.log(article.headline);
 
   return (
     <div>
