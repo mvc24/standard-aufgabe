@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { fakeData } from '../../../utils/fakeData';
 import { Article } from '../../../utils/types';
 
@@ -13,9 +13,19 @@ type Props = {
 export default function SingleArticlePage(props: Props) {
   const article = fakeData.find((article) => article.id === props.params.id);
 
+  // if (article === undefined) {
+  //   useEffect(() => {
+  //     router.push('/not-found');
+  //   });
+  //   if (!article) {
+  //     return null;
+  //   }
+  // }
+
   if (!article) {
     notFound();
   }
+
   // console.log(article.headline);
 
   return (
